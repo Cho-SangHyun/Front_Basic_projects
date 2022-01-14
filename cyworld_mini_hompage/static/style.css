@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    /* 화면에 꽉 채우려면 html, body에 둘다 height: 100%를 일단 멕여야 함 */
+    height: 100%;
+    /* 기본으로 있는 마진 없애기 */
+    margin: 0;
+}
+
+body{
+    /* 백그라운드 이미지와 컬러를 동시에 하면 이미지 밑에 컬러가 깔리는 느낌
+    즉 이미지에 투명한 부분이 있으면 그 곳은 컬러 설정한 부분이 보인다 */
+    background-color: #a3a3a3;
+    background-image: url("./images/pattern.png");
+    background-size: 100px;
+}
+
+/* 반응형 X */
+.bookcover{
+    width: 1080px;
+    height: 620px;
+    background-color: rgb(171, 193, 233);
+
+    margin: 0 auto;
+    border-radius: 10px;
+
+    position: relative;
+    top: 50px; 
+}
+
+.bookdot{
+    width: 1060px;
+    height: 600px;
+    background-color: transparent;
+
+    border-radius: 10px;
+    border: 3px dashed rgb(238, 238, 238);
+
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.page{
+    width: 1040px;
+    height: 580px;
+    background-color: rgb(238, 238, 238);
+
+    border-radius: 10px;
+
+    position: absolute;
+    top: 7px;
+    left: 8px;
+}
