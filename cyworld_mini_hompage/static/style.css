@@ -47,10 +47,61 @@ body{
     width: 1040px;
     height: 580px;
     background-color: rgb(238, 238, 238);
+    padding: 12px;
 
     border-radius: 10px;
 
     position: absolute;
     top: 7px;
     left: 8px;
+
+    display: flex;
+}
+
+.page-left{
+    flex: 0.35;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-right: 1.25rem;
+}
+
+.page-center{
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-bar{
+    flex: 0.15;
+    border: 1px solid black;
+}
+
+.guest-count{
+    flex: 0.075;
+    font-size: 0.75rem;
+}
+
+.page-title{
+    flex: 0.075;
+    display: flex;
+}
+
+.title{
+    flex: 1;
+}
+
+.url-section{
+    flex: 0.5;
+}
+
+.content{
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid rgb(206, 206, 206);
+    width: 100%;
+    flex: 1;
 }
