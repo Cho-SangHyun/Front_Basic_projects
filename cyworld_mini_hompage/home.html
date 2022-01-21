@@ -23,6 +23,13 @@
                     <div class="content profile-section">
                         <img src="./static/images/profile.png" alt="profile image" id="profile-image">
                         <p id="profile-message">접었던 유튜브를 조만간 다시 할 계획이다. 근데 어떤 영상을 올릴까? 다시 브이로그를 찍어봐야겠다.</p>
+                        <div class="padotagi">
+                            <select name="pado" id="pado">
+                                <option value="none" selected disabled hidden>파도타기</option>
+                                <option value="https://comu.oopy.io/">코뮤니티로 가기</option>
+                                <option value="https://www.instagram.com/">인스타그램 놀러가기</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
                 <div class="page-center">
@@ -59,13 +66,26 @@
                             </div>
                         </div>
                         <div class="category-name">Miniroom</div>
-                        
+                        <img src="./static/images/studio.png" alt="스튜디오" id="miniroom-image">
                     </div>
                 </div>
                 <div class="menu-bar">
+                    <a href="#"><button class="menu">홈</button></a>
+                    <a href="#"><button class="menu">다이어리</button></a>
+                    <a href="#"><button class="menu">사진첩</button></a>
+                    <a href="#"><button class="menu">방명록</button></a>
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+        window.onload = function(){
+            const PADO = document.getElementById("pado");
+            PADO.onchange = function(){
+                location.href = this.value;
+            }
+        }
+    </script>
 </body>
 </html>
