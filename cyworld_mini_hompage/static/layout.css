@@ -111,12 +111,6 @@ body{
     padding: 0.75rem;
 }
 
-.main-section{
-    /* display: flex;
-    flex-direction: column; */
-    overflow-y: auto;
-}
-
 .profile-section{
     display: flex;
     flex-direction: column;
