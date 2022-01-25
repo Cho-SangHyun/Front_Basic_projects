@@ -90,3 +90,7 @@
     display: inline;
     background-color: rgb(41, 151, 105);
 }
+
+#hidden-diary{
+    display: none;
+}
