@@ -37,7 +37,7 @@
 }
 
 .guest-profile{
-    border: 1px solid black;
+    border: 1px solid rgb(204, 204, 204);
     height: 200px;
     width: 200px;
     margin-right: 1.25rem;
