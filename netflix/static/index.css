@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+}
+
+.logo{
+    width: 70px;
+    margin-left: 2rem;
+    margin-top: 0.75rem;
+}
+
+.profiles-container{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-profiles{
+    width: 600px;
+    height: 240px;
+}
+
+.choose-profile{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-label{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    margin: 1.5rem 0;
+}
+
+.profile, .add-profile{
+    /* display: inline-block; */
+    list-style: none;
+    cursor: pointer;
+}
+
+.profile-icon, .add-profile-icon{
+    height: 100px;
+    width: 100px;
+    border-radius: 0.25rem;
+}
+
+.profile1 .profile-icon{
+    background-color: cornflowerblue;
+}
+
+.profile2 .profile-icon{
+    background-color: rgb(197, 197, 58);
+}
+
+.profile3 .profile-icon{
+    background-color: rgb(218, 81, 47);
+}
+
+.profile4 .profile-icon{
+    background-color: rgb(141, 140, 139);
+}
+
+.profile:hover > .profile-icon{
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.profile:hover > .profile-name{
+    color: rgb(255, 255, 255);
+}
+
+.add-profile:hover > .add-profile-icon{
+    background-color: rgb(255, 255, 255);
+}
+
+.add-profile:hover > .profile-name{
+    color: rgb(255, 255, 255);
+}
+
+.add-profile-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-icon{
+    font-size: 3.5rem;
+    color: rgb(128, 128, 128);
+}
+
+.profile-name{
+    color: rgb(128, 128, 128);
+    display: block;
+    font-size: 0.8rem;
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+button{
+    background-color: transparent;
+    border: 1px solid rgb(128, 128, 128);
+    color: rgb(128, 128, 128);
+    margin: 1.5rem 0;
+    padding: 0.25rem 1rem;
+    cursor: pointer;
+}
+
+button:hover{
+    border-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
+
