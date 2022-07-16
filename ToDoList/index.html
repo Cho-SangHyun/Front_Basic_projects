@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/index.css">
+    <title>Jofe ToDoList</title>
+</head>
+<body>
+    <header class="header">
+        📜 ToDo List
+    </header>
+    <section class="container">
+        <nav class="select-when">
+            <button data-category-name="today" class="select-btn">📕 오늘</button>
+            <button data-category-name="week" class="select-btn">📗 이번 주</button>
+            <button data-category-name="month" class="select-btn">📘 이번 달</button>
+        </nav>
+        <section class="main-section">
+            <h1 class="when-title">📕 오늘 할 일</h1>
+            <span class="todo-count">총 0개</span>
+            <section class="input-zone">
+                <input type="text" class="todo-input" placeholder="할 일을 입력해주세요">
+                <button class="input-submit">확인</button>
+            </section>
+            <ul class="todo-list">
+                <li>
+                    <span class="todo-title">겅부하기</span>
+                    <div class="todo-btn-zone">
+                        <button class="todo-list-btn complete-btn">완료</button>
+                        <button class="todo-list-btn update-btn">수정</button>
+                        <button class="todo-list-btn remove-btn">삭제</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="todo-title done">메롱하기</span>
+                    <div class="todo-btn-zone">
+                        <button class="todo-list-btn complete-btn">완료</button>
+                        <button class="todo-list-btn update-btn">수정</button>
+                        <button class="todo-list-btn remove-btn">삭제</button>
+                    </div>
+                </li>    
+            </ul>
+        </section>
+    </section>
+    <script src="./src/js/index.js"></script>
+</body>
+</html>

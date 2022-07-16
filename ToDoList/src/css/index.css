@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    width: 100%;
+    height: 5rem;
+    text-align: center;
+    font-size: 3.25rem;
+    font-weight: bold;
+    padding-top: 1.5rem;
+}
+
+.container{
+    flex-grow: 1;
+}
+
+.main-section{
+    margin: 2.5rem auto ;
+    width: 850px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    box-shadow: 5px 5px 15px 0px rgba(117,117,117,1);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.select-when{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+
+.select-btn{
+    border: 0;
+    width: 150px;
+    height: 50px;
+    font-size: 1.25rem;
+    border-radius: 1rem;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin: 0 2.5rem;
+    box-shadow: 2px 2px 5px 0px rgba(115,115,115,1);
+}
+
+.when-title{
+    font-size: 2rem;
+    margin: 0.5rem;
+    text-align: center;
+}
+
+.todo-count{
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+}
+
+.input-zone{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.todo-input{
+    width: 400px;
+    height: 50px;
+    font-size: 1.25rem;
+    border-radius: 2rem;
+    padding-left: 1rem;
+    outline: none;
+    border: none;
+    background-color: rgb(238, 238, 238);
+    margin-right: 2rem;
+}
+
+.input-submit{
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 2rem;
+    background-color: rgb(46, 109, 61);
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.todo-list{
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+    list-style: none;
+    font-size: 1.25rem;
+}
+
+li{
+    margin: 0.5rem auto;
+    width: 75%;
+    display: flex;
+    align-items: center;
+}
+
+.todo-title{
+    width: 400px;
+}
+
+.todo-btn-zone{
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+}
+
+.todo-list-btn{
+    width: 60px;
+    border-radius: 1rem;
+    margin-left: 0.25rem;
+    cursor: pointer;
+    background-color: rgb(224, 224, 224);
+    border: none;
+}
+
+.todo-list-btn:hover{
+    background-color: rgb(185, 185, 185);
+}
+
+.done{
+    color: rgb(185, 185, 185);
+    text-decoration: line-through;
+}
