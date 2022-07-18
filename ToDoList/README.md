@@ -10,7 +10,7 @@
     
 - 삭제버튼 클릭시
     
-    ![Untitled](https://user-images.githubusercontent.com/65762283/179506036-61ddd129-7a62-453d-a832-783aa0d74a9c.png)
+    ![Untitled](https://user-images.githubusercontent.com/65762283/179506330-188e7cc5-09b3-4502-840a-382ab5fd7f48.png)
     
 - 상단 탭을 통해 오늘, 이번주, 이번달 단위로 할일들을 관리
     
