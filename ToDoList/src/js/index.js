@@ -1,13 +1,6 @@
-const $ = (query) => document.querySelector(query);
+import { $ } from "./dom_selector.js";
+import store from "./store.js";
 
-const store = {
-    setLocalStorage(item){
-        localStorage.setItem("todo", JSON.stringify(item));
-    },
-    getLocalStorage(){
-        return JSON.parse(localStorage.getItem("todo"));
-    }
-}
 function App(){
     this.toDoList = {
         today: [],
@@ -99,6 +92,16 @@ function App(){
             return;
         }
     })
+
+    const changeCategory = (e) => {
+        if(e.target.classList.contains("select-btn")){
+            $(".when-title").innerText = `${e.target.innerText} 할 일`;
+            this.category = e.target.dataset.categoryName;
+            render();
+        }
+    }
+
+    $(".select-when").addEventListener("click", changeCategory)
 }
 
 const app = new App();
